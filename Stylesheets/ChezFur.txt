@@ -150,4 +150,83 @@ nav a:active {
    - Accent color: #F28A30 (highlight for buttons or links)
    - Font color: #1D1E2C (ensures good contrast with backgrounds, 13.05:1 ratio)
 */
+/* Remove bullets from nav list */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Vertical navigation for large screens */
+nav ul li {
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Horizontal navigation for small screens */
+@media screen and (max-width: 750px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Style for aside element */
+aside {
+    padding: 15px;
+    background-color: #fafafa;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 750px) {
+    aside {
+        padding: 8px;
+    }
+}
+
+/* Two-column layout for large screens */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Center the footer */
+footer {
+    clear: both;
+    text-align: center;
+}
 
